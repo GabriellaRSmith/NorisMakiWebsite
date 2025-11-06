@@ -1,0 +1,100 @@
+@font-face {
+  font-family: 'rosehot';
+  src: url('../assets/fonts/Rosehot.ttf') format('truetype'); /* path relative to CSS file */
+}
+
+@font-face {
+  font-family: 'VictoriaSerif';
+  src: url('../assets/fonts/VICTORIA SERIF.ttf') format('truetype'); /* remove spaces in filename */
+}
+
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #FAE1DD;
+  color: #2f1b13;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Top: Logo */
+.center-logo a {
+  font-family: 'rosehot';
+  font-size: 2rem;
+  font-weight: bold;
+  color: #2f1b13;
+  text-decoration: none;
+}
+
+/* Nav row: 3 columns */
+.nav-row {
+  display: flex;
+  width: 100%;
+  justify-content: space-between; /* distributes left/center/right */
+  align-items: center;
+  padding-top: 10px;
+}
+
+/* Empty left space */
+.nav-left {
+  display: flex;
+  gap: 20px;
+  justify-content: flex-start;
+  align-items: center;
+  flex: 1;
+  padding-left: 10px;
+}
+
+.nav-left a, .mini-logo{
+  text-decoration: none;
+  color: #2f1b13;
+  font-family: 'rosehot';
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.nav-left .mini-logo:hover {
+  color: #8f5762;
+}
+
+/* Nav links centered */
+.nav-links {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  flex: 1;
+}
+
+.nav-links a, .nav-links button {
+  font-family: 'VictoriaSerif';
+  background: none;
+  border: none;
+  color: #2f1b13;
+  font-weight: 500;
+  font-size: 1rem;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.nav-links a:hover, .nav-links button:hover {
+  color: #8f5762;
+}
+
+/* Icons on right */
+.header-icons {
+  display: flex;
+  gap: 20px;
+  justify-content: flex-end;
+  flex: 1;
+  padding-right: 10px;
+}
+
+.header-icons a {
+  color: #2f1b13;
+}
+
+.header-icons a:hover {
+  color: #8f5762;
+}
