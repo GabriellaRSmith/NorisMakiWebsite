@@ -3,8 +3,19 @@
   src: url('./assets/fonts/VICTORIA SERIF.ttf') format('truetype'); /* path relative to CSS file */
 }
 
+@font-face {
+  font-family: 'rosehot';
+  src: url('assets/fonts/Rosehot.ttf') format('truetype'); /* path relative to CSS file */
+}
+
+@font-face {
+  font-family: 'VictoriaSerif';
+  src: url('assets/fonts/VICTORIA SERIF.ttf') format('truetype'); /* remove spaces in filename */
+}
 
 body {
+  display: flex;             /* enables flex layout */
+  flex-direction: column;
   margin: 0;
   font-family: 'MyBodyFont', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -14,4 +25,27 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.about {
+  background-color: #FAE1DD;
+  border-radius: 20px;
+  padding: 30px;
+  max-width: 600px; 
+  text-align: center;
+  margin: 40px auto;
+  
+}
+
+.aboutTitle{
+  font-family: 'VictoriaSerif';
+  text-align: center;
+}
+
+
+.aboutText{
+  font-family: 'VictoriaSerif';
+  text-align: center;
+  margin: 3%;
+  font-size: 1.3rem;
 }
