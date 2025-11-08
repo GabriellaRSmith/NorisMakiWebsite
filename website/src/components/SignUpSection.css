@@ -1,0 +1,189 @@
+@font-face {
+  font-family: 'rosehot';
+  src: url('../assets/fonts/Rosehot.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'VictoriaSerif';
+  src: url('../assets/fonts/VICTORIA SERIF.ttf') format('truetype');
+}
+
+
+.signup-section {
+  background: #FAE1DD;
+  color: #2f1b13;
+  padding: 40px 24px 28px;
+}
+
+.signup-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 520px 1fr;
+  gap: 40px;
+  align-items: start;
+}
+
+
+.info-grid {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: 20px;
+  align-items: center;
+  margin-left: -80px;
+}
+
+
+.seal {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  background: #F8EDEB;
+  border: 2px solid #2f1b13;
+  display: grid;
+  place-items: center;
+  box-shadow: 0 6px 18px rgba(47, 27, 19, 0.06);
+}
+.monogram {
+  font-family: 'rosehot';
+  font-size: 3rem;       
+  letter-spacing: 2px;
+  color: #2f1b13;
+}
+
+.menu-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px 28px;
+}
+.menu-columns ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.menu-columns li {
+  font-family: 'VictoriaSerif';
+  font-size: 1rem;      
+  line-height: 1.8;
+  color: #2f1b13;
+  cursor: default;
+}
+.menu-columns li:hover {
+  color: #8f5762;
+}
+
+.form-title {
+  font-family: 'VictoriaSerif';
+  font-weight: 600;
+  font-size: 1.8rem;        
+  letter-spacing: 0.6px;
+  margin: 4px 0 16px;
+  text-transform: none;
+}
+
+.checkbox {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-family: 'VictoriaSerif';
+  font-size: 0.95rem;
+  color: #2f1b13;
+  margin-bottom: 12px;
+}
+.checkbox input {
+  width: 16px;
+  height: 16px;
+  accent-color: #2f1b13;
+}
+
+.stack {
+  display: grid;
+  gap: 12px;
+  width: 100%;
+  max-width: 880px;        /* email/country/button share the same width */
+}
+
+.email-input,
+.country-select {
+  width: 100%;
+  box-sizing: border-box; 
+  height: 46px;
+  padding: 10px 14px;
+  background: #ffffff;
+  color: #2f1b13;
+  border: 2px solid #2f1b13;
+  border-radius: 14px;
+  outline: none;
+  font-family: 'VictoriaSerif';
+  font-size: 1rem;
+  display: block;
+}
+.email-input::placeholder {
+  color: #7b645c;
+}
+
+/* submit button centered under fields */
+.signup-button {
+  justify-self: center;
+  width: 100%;
+  max-width: 880px;      
+  height: 50px;
+  border-radius: 28px;
+  border: 2px solid #2f1b13;
+  background: transparent;
+  color: #2f1b13;
+  font-family: 'VictoriaSerif';
+  font-size: 1.05rem;
+  letter-spacing: 0.6px;
+  cursor: pointer;
+  transition: background 0.18s ease, color 0.18s ease, transform 0.06s ease;
+}
+.signup-button:hover {
+  background: rgba(47, 27, 19, 0.08);
+}
+.signup-button:active {
+  transform: translateY(1px);
+}
+
+/* ---------- FOOTER ---------- */
+.signup-footer {
+  max-width: 1200px;
+  margin: 60px auto 0;
+  display: grid;
+  place-items: center;
+  gap: 12px;
+}
+.social-icons {
+  display: grid;
+  grid-auto-flow: column;
+  gap: 30px;
+  align-items: center;
+  font-size: 24px;       
+}
+.social-icons svg {
+  color: #2f1b13;
+  transition: color 0.18s ease, transform 0.06s ease;
+}
+.social-icons svg:hover {
+  color: #8f5762;
+  transform: translateY(-1px);
+}
+.signup-footer p {
+  margin: 0;
+  font-family: 'VictoriaSerif';
+  font-size: 0.95rem;
+  color: #2f1b13;
+  opacity: 0.9;
+}
+
+@media (max-width: 1000px) {
+  .signup-container {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+  .info-grid {
+    grid-template-columns: 160px 1fr;
+  }
+  .seal { width: 150px; height: 150px; }
+  .monogram { font-size: 2.4rem; }
+  .stack, .signup-button { max-width: 100%; }
+}
