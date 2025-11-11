@@ -1,4 +1,5 @@
-import React from 'react';
+import React from "react";
+import SignUpSection from "../components/SignUpSection";
 
 function Home() {
   return (
@@ -15,6 +16,9 @@ function Home() {
           <em> Broken Heart Club</em>, has been my focus for the last year combining pop and ballads. I hope you enjoy it as much I have enjoyed making it."
         </p>
       </section>
+
+      {/* Sign-Up block */}
+      <SignUpSection />
     </main>
   );
 }
