@@ -1,0 +1,11 @@
+.title-sequence-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-sequence{
+    width: 100%;
+    height: 550px;
+    background-color: black;
+}

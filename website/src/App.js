@@ -5,8 +5,9 @@ import Header from './components/Header.js';
 import Home from './pages/HomePage.js';
 import Merchandise from './pages/MerchandisePage.js';
 import Tickets from './pages/TicketsPage.js';
-import Cart from './pages/CartPage.js';
+import Cart from './pages/CartPage.js';  //probably won't need a cart page--> will just use a pop up side bar for cart
 import Login from './pages/LoginPage.js';
+import Product from './pages/ProductPage.js';
 
 function AppWrapper() {
   const location = useLocation();
@@ -21,6 +22,7 @@ function AppWrapper() {
         <Route path="/tickets" element={<Tickets />} />
         <Route path="/cart" element={<Cart />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/product" element={<Product />} />
       </Routes>
     </>
   );
