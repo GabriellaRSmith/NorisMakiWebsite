@@ -21,26 +21,30 @@
     flex-grow: 1;
     padding: 40px 60px 80px 60px;
     background-color: #FAE1DD;
+    /* #FAE1DD */
 }
 
 
 .merch-items-container{
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
     flex-wrap: wrap;
-    background-color: #fff2ec;
+    background-color: #F8EDEB;
+    /* #fff2ec */
     padding: 60px;
 }
 
 .merch-item-card{
     display: flex;
     flex-direction: column;
-    height: 400px; 
-    border: 1px solid black;
+    height: 375px; 
+    border: 1px solid #413e3e;
     justify-content: flex-start;
     align-items: center;
     padding: 20px;
     margin-bottom: 40px;
+    color: #413e3e;
 }
 
 .item-image{
@@ -48,8 +52,8 @@
     height: 300px;
 }
 
-img:hover{
-    box-shadow: 8px 12px 8px #D8E2DC;
+.item-image:hover{
+    box-shadow: 8px 12px 8px #ccdfd4;
 }
 .item-name, .item-price{
     font: 'VictoriaSerif';

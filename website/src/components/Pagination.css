@@ -1,0 +1,39 @@
+@font-face {
+  font-family: 'rosehot';
+  src: url('../assets/fonts/Rosehot.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'VictoriaSerif';
+  src: url('../assets/fonts/VICTORIA SERIF.ttf') format('truetype');
+}
+
+
+.pagination-container{
+    width: 300px;
+    height: 250px;  
+}
+
+.item-page-number-contianer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin-top: 20px;
+}
+
+.page-link{
+    font-size: 28px;
+    font-weight: 700;
+    text-decoration: none;
+    padding: 15px;
+    font-family: 'VictoriaSerif';
+}
+
+.page-link:link, .page-link:visited{
+    color: #413e3e;
+}
+
+.page-link:hover{
+    color: #8f5762;
+    text-decoration: underline;
+}

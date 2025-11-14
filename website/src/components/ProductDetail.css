@@ -1,0 +1,123 @@
+@font-face {
+  font-family: 'rosehot';
+  src: url('../assets/fonts/Rosehot.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'VictoriaSerif';
+  src: url('../assets/fonts/VICTORIA SERIF.ttf') format('truetype');
+}
+
+.product-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 70px;
+    padding-top: 300px;
+    width: 100%;
+    min-height: 900px;
+    background-color: #F8EDEB;
+    
+}
+
+.product-image{
+    width: 600px;
+    height: 600px;
+}
+
+.product-details-container{
+    display: flex;
+    align-self: flex-start;
+    position: sticky;
+    flex-direction: column;
+    flex-basis: 400px;
+    font-family: 'VictoriaSerif';
+    margin-bottom: 30px;
+}
+
+.product-description{
+    font-family: 'rosehot';
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.name{
+    font-family: 'rosehot';
+    font-size: 40px;
+    font-weight: 900;
+}
+
+.price{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.quantity-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.price, .quantity-container, .size{
+    margin-bottom: 15px;
+}
+
+.counter-container{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.decrement, .increment, #quantity-label{
+    border: none;
+    font-size: 20px;
+    font-weight: 400;
+    background-color: #F8EDEB;
+}
+
+.quantity{
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.size, .select-menu{
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.drop-down-container{
+    display: flex;
+    flex-direction: column;
+    background-color: #F8EDEB;
+}
+
+.select-menu{
+    display: flex;
+    padding: 6px;
+    margin-bottom: 15px;
+    flex-basis: 35px;
+    background-color:  rgb(219, 208, 208);
+    border: 2px solid #413e3e;
+    color: #413e3e;
+}
+
+.cart-btn{
+    flex-basis: 45px;
+    border-radius: 20px;
+    font-weight: 800;
+    font-size: 16px;
+    margin-bottom: 10px;
+    background-color:  rgb(219, 208, 208);
+    border: 2px solid #413e3e;
+    color: #413e3e; 
+}
+
+.size-selection{
+    color: black;
+    background-color: white;
+}
+
+.cart-btn:hover,.select-menu:hover{
+    background-color: #413e3e;
+    border: 2px solid rgb(219, 208, 208);
+    color: rgb(219, 208, 208);
+}
