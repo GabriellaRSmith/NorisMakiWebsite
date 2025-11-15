@@ -1,12 +1,19 @@
 import React, {useState} from "react";
-import "./Merchandise.css";
+import "./AllMerch.css";
 import { Link } from "react-router-dom";
 import {products} from "../assets/data";
+import Pagination from "./Pagination";
 
-function Merchandise(){
-
-    const currentProducts = products.slice(0, 6);
-    console.log("currentProduct size: " + currentProducts.length);
+const AllMerch = () =>{
+ 
+    const page = 1;
+    const [currentPage, setCurrentPage] = useState(1);
+    const [productsPerPage, setPostPerPage] = useState(6);
+    const indexOfLastProduct = currentPage*productsPerPage; //current products
+    const indexOfFirstProduct = indexOfLastProduct-productsPerPage; 
+    const currentProducts = products.slice(indexOfFirstProduct, indexOfLastProduct);
+    const paginate = pageNumber => setCurrentPage(pageNumber);
+    console.log("currentProduct size: " + products.length);
 
     return(
        
@@ -23,10 +30,9 @@ function Merchandise(){
                     </div>
                 ))}
             </div>
-
-
+         <Pagination productsPerPage={productsPerPage} totalProducts={products.length} paginate={paginate}/>
         </div>
     );
 }
 
-export default Merchandise;
+export default AllMerch;

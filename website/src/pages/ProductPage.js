@@ -1,9 +1,17 @@
-import React from "react";
-import { useParams } from "react-router-dom";
-
+import React, {useEffect, useState} from "react";
+import SignUpSection from "../components/SignUpSection";
+import ProductDetail from "../components/ProductDetail";
 function Product() {
+
   return (
-    <div>Empty Product page</div>
+    <main>
+
+        {/* Product Detail Block*/}
+        <ProductDetail />
+        {/* Sign-Up block */}
+        <SignUpSection />
+    </main>
+   
   );
 }
 
