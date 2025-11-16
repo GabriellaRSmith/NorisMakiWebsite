@@ -1,10 +1,9 @@
-import React, {useEffect, useState} from "react";
-import axios from "axios";
+import React, {useState} from "react";
 import { useParams } from "react-router-dom";
 import {products} from "../assets/data";
-import SignUpSection from "../components/SignUpSection";
 import "./ProductDetail.css"; 
 import {sizes} from "../assets/data";
+import CheckoutSidebar from "./CheckoutSidebar";
 
 function productInfo(productId){
 
@@ -15,11 +14,25 @@ function productInfo(productId){
     }
 }
 
+function updateCart({product}){
+
+    const cartItems = [];
+    const cartEmpty = false; 
+    cartItems.push(product);
+
+    return(
+        <>
+        <div>Sidebar</div>
+        <CheckoutSidebar cartEmpty={cartEmpty} cartItems={cartItems} />
+        </>  
+    );
+}
+
 function ProductDetail() {
     const [value, setValue] = useState(1);
     const {productId} = useParams();
     let product = productInfo(productId);
-  
+
   return (
     <div className="product-container">
         
@@ -52,9 +65,9 @@ function ProductDetail() {
                     }
                 </select>
             </div>
-            <button className="cart-btn">ADD TO CART</button>
-            <div className="product-description">Product Description</div>
-            <div>100% cotton</div>
+            <button className="cart-btn" onClick={()=> updateCart(product)}>ADD TO CART</button>
+            <div className="product-description">{product.description}</div>
+            <div className="cotton">100% cotton</div>           
         </div>
     </div>
   );

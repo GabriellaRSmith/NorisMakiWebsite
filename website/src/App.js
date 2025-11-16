@@ -5,7 +5,7 @@ import Header from './components/Header.js';
 import Home from './pages/HomePage.js';
 import Merchandise from './pages/MerchandisePage.js';
 import Tickets from './pages/TicketsPage.js';
-import Cart from './pages/CartPage.js';  //probably won't need a cart page--> will just use a pop up side bar for cart
+import Cart from './pages/CartPage.js';  
 import Login from './pages/LoginPage.js';
 import Product from './pages/ProductPage.js';
 

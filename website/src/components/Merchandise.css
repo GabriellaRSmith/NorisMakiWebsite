@@ -9,8 +9,10 @@
 
 .title{
     text-align: center;
-    font: 'VictoriaSerif';
+    font-family: 'rosehot';
+    font-weight: 700;
     font-size: 54px;
+    color: #413e3e;
     margin-bottom: 40px;
 }
 
@@ -21,7 +23,6 @@
     flex-grow: 1;
     padding: 40px 60px 80px 60px;
     background-color: #FAE1DD;
-    /* #FAE1DD */
 }
 
 
@@ -31,14 +32,14 @@
     align-items: center;
     flex-wrap: wrap;
     background-color: #F8EDEB;
-    /* #fff2ec */
     padding: 60px;
 }
 
 .merch-item-card{
     display: flex;
     flex-direction: column;
-    height: 375px; 
+    height: 425px; 
+    max-width: 350px;
     border: 1px solid #413e3e;
     justify-content: flex-start;
     align-items: center;
@@ -53,18 +54,20 @@
 }
 
 .item-image:hover{
-    box-shadow: 8px 12px 8px #ccdfd4;
+    box-shadow: 8px 12px 8px #b8d6c4;
 }
 .item-name, .item-price{
     font: 'VictoriaSerif';
 }
 
 .item-name{
-    margin-top: 5px;
+    margin-top: 10px;
     font-weight: 700;
-    font-size: 24px;
+    font-size: 22px;
+    text-align: center;
 }
 
 .item-price{
-    font-size: 20px;
+    font-size: 18px;
+    font-weight: 400;
 }
