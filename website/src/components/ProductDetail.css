@@ -15,7 +15,7 @@
     gap: 70px;
     padding-top: 300px;
     width: 100%;
-    min-height: 900px;
+    min-height: 1200px;
     background-color: #F8EDEB;
     
 }
@@ -32,13 +32,15 @@
     flex-direction: column;
     flex-basis: 400px;
     font-family: 'VictoriaSerif';
-    margin-bottom: 30px;
+    margin-bottom: 125px;
 }
 
 .product-description{
-    font-family: 'rosehot';
-    font-size: 20px;
-    font-weight: 600;
+    /* font-family: 'rosehot'; */
+    font-family: 'VictoriaSerif';
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 10px;
 }
 
 .name{
@@ -120,4 +122,8 @@
     background-color: #413e3e;
     border: 2px solid rgb(219, 208, 208);
     color: rgb(219, 208, 208);
+}
+
+.cotton{
+    font-size: 18px;
 }
